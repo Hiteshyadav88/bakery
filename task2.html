@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TASK </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <style>
+    
+   h1{
+    background-color: aqua;
+   }
+   img{
+    
+    border-radius: 2%;
+    
+    border:2px solid red;
+   }
+   
+  </style>
+</head>
+
+<body>
+  
+  <center>
+    <h1><u><i>BAKEBOOK BAKERY</i></u></h1>
+  </center>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Bakebook offers</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Cake</a></li>
+              <li><a class="dropdown-item" href="#">Pastry</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Special desert food</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+<h4><i><u>Note:You can add one item at a time</u></i></h4>
+  <div class="container text-center" >
+    <div class="row">
+      <div class="col">
+        <img width="120%"  src="https://www.fnp.com/images/pr/l/v20221130121925/pineapple-cake-half-kg-eggless_1.jpg"
+          alt="cake">
+      </div>
+      <div class="col-6">
+        <img width="58%" 
+          src="https://www.fnp.com/images/pr/l/v20221118132238/heavenly-butterscotch-cream-cake-half-kg-eggless_1.jpg"
+          alt="cake">
+      </div>
+      <div class="col">
+        <img width="120%" 
+          src="https://www.fnp.com/images/pr/l/v20230926071759/fruit-overload-cake-half-kg-eggless_1.jpg" alt="cake">
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <button class="bake" id="booka" name="pineaplle cake" onclick="msg1()">$20
+          <br>click to buy
+        </button>
+      </div>
+      <div class="col-5">
+        <button class="bake" id="book4" name="oreo cake" onclick="msg2()">$25
+          <br>click to buy
+        </button>
+      </div>
+      <div class="col">
+        <button class="bake" name="fruit cake" id="book3" onclick="msg3()">$30
+          <br>click to buy
+        </button>
+      </div>
+    </div>
+  </div><br><br>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <img width="100%" src="https://theobroma.in/cdn/shop/products/DevilsMoussePastry3_400x400.jpg?v=1632140815"
+          alt="pastry">
+      </div>
+      <div class="col-6">
+        <img width="48%" src="https://theobroma.in/cdn/shop/products/HazelnutMoussePastry3_400x400.jpg?v=1632142646"
+          alt="pastry">
+      </div>
+      <div class="col">
+        <img width="100%" src="https://theobroma.in/cdn/shop/products/EgglessOpiumPastry2_400x400.jpg?v=1632141189"
+          alt="pastry">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <button class="bake" id="book2" name="chocolate pastry" onclick="msg4()">$10
+          <br>click to buy
+        </button>
+      </div>
+      <div class="col-5">
+        <button class="bake" id="book1" name="nut pastry" onclick="msg5()">$10
+          <br>click to buy
+        </button>
+      </div>
+      <div class="col">
+        <button class="bake" id="book" name="light chocolate pastry" onclick="msg6()">$10
+          <br>click to buy
+        </button>
+      </div>
+    </div>
+  </div><br>
+  <center><h3><i><u>end-</u></i></h3></center>
+  <!-- <script>
+   
+   
+    </script> -->
+    <script>
+      
+// addEventListener("click",()=>{
+//     button.style.backgroundColor="purple";
+// })
+// const button=document.querySelectorAll('button');
+
+// button.addEventListener('mouseover',()=>{
+//     button.style.background="purple";
+// })
+const btn=document.getElementById("book");
+btn.addEventListener("mouseover",()=>{  //when mouse is over the btn it dispaly following css 
+  btn.style.backgroundColor="purple";
+})
+
+btn.addEventListener("mouseout",()=>{
+  btn.style.backgroundColor="grey";
+})
+
+const btn1=document.getElementById("book1");
+btn1.addEventListener("mouseover",()=>{  //when mouse is over the btn it dispaly following css 
+  btn1.style.backgroundColor="purple";
+})
+
+btn1.addEventListener("mouseout",()=>{
+  btn1.style.backgroundColor="grey";
+})
+
+const btn2=document.getElementById("book2");
+btn2.addEventListener("mouseover",()=>{  //when mouse is over the btn it dispaly following css 
+  btn2.style.backgroundColor="purple";
+})
+
+btn2.addEventListener("mouseout",()=>{
+  btn2.style.backgroundColor="grey";
+})
+
+const btn3=document.getElementById("book3");
+btn3.addEventListener("mouseover",()=>{  //when mouse is over the btn it dispaly following css 
+  btn3.style.backgroundColor="purple";
+})
+
+btn3.addEventListener("mouseout",()=>{
+  btn3.style.backgroundColor="grey";
+})
+
+const btn4=document.getElementById("book4");
+btn4.addEventListener("mouseover",()=>{  //when mouse is over the btn it dispaly following css 
+  btn4.style.backgroundColor="purple";
+})
+
+btn4.addEventListener("mouseout",()=>{
+  btn4.style.backgroundColor="grey";
+})
+
+const btna=document.getElementById("booka");
+btna.addEventListener("mouseover",()=>{  //when mouse is over the btn it dispaly following css 
+  btna.style.backgroundColor="purple";
+})
+
+btna.addEventListener("mouseout",()=>{
+  btna.style.backgroundColor="grey";
+})
+
+function msg1(){
+  document.write("YOU HAVE ORDER PINEAPPLE CAKE:")
+  document.write("THANKS FOR PLACING ORDER<br>");
+  document.write("<b>GO TO PAGE FOR MORE ORDER</b>")
+}
+function msg2(){
+  document.write("YOU HAVE ORDER OREO CAKE:")
+  document.write("THANKS FOR PLACING ORDER<br>");
+  document.write("<b>GO TO PAGE FOR MORE ORDER</b>")
+}
+function msg3(){
+  document.write("YOU HAVE ORDER FRUIT CAKE:")
+  document.write("THANKS FOR PLACING ORDER<br>");
+  document.write("<b>GO TO PAGE FOR MORE ORDER</b>")
+}
+function msg4(){
+  document.write("YOU HAVE ORDER CHOCOLATE PASTRY:")
+  document.write("THANKS FOR PLACING ORDER<br>");
+  document.write("<b>GO TO PAGE FOR MORE ORDER</b>")
+}
+function msg5(){
+  document.write("YOU HAVE ORDER NUT PASTRY:")
+  document.write("THANKS FOR PLACING ORDER<br>");
+  document.write("<b>GO TO PAGE FOR MORE ORDER</b>")
+}
+function msg6(){
+  document.write("YOU HAVE ORDER LIGHT CHOCOLATE PASTRY:")
+  document.write("THANKS FOR PLACING ORDER<br>");
+  document.write("<b>GO TO PAGE FOR MORE ORDER</b>")
+}
+    </script>
+</body>
+
+</html>
